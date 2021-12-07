@@ -11,12 +11,10 @@ namespace TestGit1.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        [HttpGet("GetJson")]
-        public IActionResult GetJson()
+        [HttpGet("GetProduct")]
+        public IActionResult Getproduct()
         {
-            int[] a = new int[3] { 1, 2, 3 };
-            object ob = a;
-            return Ok(ob);
+            return Ok(new { v=1,c=2});
         }
     }
 }
