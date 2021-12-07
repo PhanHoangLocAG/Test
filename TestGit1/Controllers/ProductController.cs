@@ -18,5 +18,21 @@ namespace TestGit1.Controllers
             object ob = a;
             return Ok(ob);
         }
+
+        [HttpGet("GetJson")]
+        public IActionResult GetJsondsfsdfa()
+        {
+            int[] a = new int[3] { 1, 2, 3 };
+            object ob = a;
+            return Ok(ob);
+        }
+
+        [HttpGet("GetJson")]
+        public IActionResult GetJsonasdfadfa()
+        {
+            int[] a = new int[3] { 1, 2, 3 };
+            object ob = a;
+            return Ok(ob);
+        }
     }
 }
