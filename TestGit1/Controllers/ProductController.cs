@@ -10,7 +10,7 @@ namespace TestGit1.Controllers
         [HttpGet("GetJson1")]
         public IActionResult GetJson1()
         {
-            int[] a = new int[3] { 1, 2, 3 };
+            int[] a = new int[4] { 1, 2, 3 ,4};
             object ob = a;
             return Ok(ob);
         }
@@ -18,7 +18,7 @@ namespace TestGit1.Controllers
         [HttpGet("GetJson")]
         public IActionResult GetJson()
         {
-            int[] a = new int[3] { 1, 2, 3 };
+            int[] a = new int[2] { 1, 2 };
             object ob = a;
             return Ok(ob);
         }
@@ -26,7 +26,7 @@ namespace TestGit1.Controllers
         [HttpGet("GetJson")]
         public IActionResult GetJsondsfsdfa()
         {
-            int[] a = new int[3] { 1, 2, 3 };
+            int[] a = new int[2] { 2, 3 };
             object ob = a;
             return Ok(ob);
         }
