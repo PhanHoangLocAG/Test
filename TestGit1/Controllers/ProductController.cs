@@ -1,9 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
+
 
 namespace TestGit1.Controllers
 {
@@ -11,6 +7,14 @@ namespace TestGit1.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+        [HttpGet("GetJson1")]
+        public IActionResult GetJson1()
+        {
+            int[] a = new int[3] { 1, 2, 3 };
+            object ob = a;
+            return Ok(ob);
+        }
+
         [HttpGet("GetJson")]
         public IActionResult GetJson()
         {
